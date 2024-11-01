@@ -23,7 +23,7 @@
                 transform: rotateY(0deg);
             }
             to {
-                transform: rotateY(180deg);
+                transform: rotateY(90deg);
             }
         }
     </style>
@@ -46,6 +46,12 @@
 
         // Add the rotation class to trigger the animation
         imageElement.classList.add('rotateY');
+        
+// Remove the rotation class after animation ends to reset it for the next click
+       
+    imageElement.addEventListener('animationend', () => {
+        imageElement.classList.remove('rotateY');
+      }, { once: true });
 
 
     });
