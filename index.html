@@ -67,11 +67,13 @@
             flipBoxBack.style.display = "block";
             flipBoxBack.classList.add('flip');
             flipBox.classList.remove('flip');
+            flipBoxBack.classList.remove('back');
         } else {
             flipBoxBack.style.display = "none";
             flipBox.style.display = "block";
             flipBox.classList.add('flip');
             flipBoxBack.classList.remove('flip');
+            flipBoxBack.classList.add('back');
         }
     }
 </script>
